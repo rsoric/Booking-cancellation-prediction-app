@@ -309,7 +309,7 @@ def makeAPIRequest():
     body = str.encode(json.dumps(data))
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/5c373ed9903b4b54915e3e5c30790ae0/services/ee21656adb9341f2b55df3af1f60197a/execute?api-version=2.0&details=true'
-    api_key = 'l01e1HlPd/T+gt62N1B30yyHhF3zcGSTJQCV4lxZes/I5sc7t2H3Hg39mp/rRS/7C1r4HmQp5RF1eRhx7AuqRg=='  # Replace this with the API key for the web service
+    api_key = 'abc123'  # Replace this with the API key for the web service
     headers = {'Content-Type': 'application/json', 'Authorization': ('Bearer ' + api_key)}
     req = urllib.request.Request(url, body, headers)
     response = urllib.request.urlopen(req)
